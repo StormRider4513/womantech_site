@@ -1,664 +1,87 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woman Tech - Impulsionando Mulheres na Tecnologia</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="Conheça o WomanTech e suas iniciativas para aproximar meninas e mulheres da tecnologia.">
+    <title>WomanTech | Início</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;family=Raleway:wght@300;400;600;700&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Raleway:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-
-    <!-- Navbar -->
     <div id="header"></div>
-
-    <!-- Hero Section -->
-    <section id="home"
-        class="relative min-h-screen flex items-center pt-16 overflow-hidden bg-gradient-to-br from-[#682857] to-[#8d5e81]">
-        <div class="blob bg-[#Ded9e2] w-96 h-96 top-20 left-20 animate-pulse"></div>
-        <div class="blob bg-[#8d5e81] w-80 h-80 bottom-20 right-20 animate-pulse" style="animation-delay: 2s;"></div>
-
-        <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center justify-between relative z-10">
-            <div class="md:w-1/2 text-white mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                    Impulsionando <span class="text-[#F5f5f5] relative">
-                        Mulheres
-                        <svg class="absolute -bottom-2 left-0 w-full" height="10" viewBox="0 0 100 10"
-                            preserveAspectRatio="none">
-                            <path d="M0,0 Q50,10 100,0 L100,10 L0,10 Z" fill="#Ded9e2" opacity="0.5"></path>
-                        </svg>
-                    </span> na Tecnologia
-                </h1>
-                <p class="text-lg md:text-xl mb-8 opacity-90">
-                    Transformando o futuro através da inclusão e capacitação feminina no mundo tech. Junte-se a nós
-                    nessa jornada de inovação e empoderamento.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#about" class="btn-primary px-8 py-3 rounded-full font-bold">Conheça o Projeto</a>
-                    <a href="#contact"
-                        class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-[#682857] transition duration-300">Entre
-                        em Contato</a>
+    <main>
+        <section class="hero">
+            <div class="container hero__content">
+                <p class="eyebrow">Mulheres na tecnologia</p>
+                <h1>Impulsionando Mulheres na Tecnologia</h1>
+                <p class="hero__lead">O WomanTech incentiva meninas e mulheres a conhecer, aprender e construir seu
+                    futuro na tecnologia por meio de formação, projetos e colaboração.</p>
+                <div class="button-group">
+                    <a class="button button--primary" href="sobre.html">Conheça o projeto</a>
+                    <a class="button button--outline" href="cursos.html">Explore os cursos</a>
                 </div>
             </div>
+        </section>
 
-            <div class="md:w-1/2 flex justify-center">
-                <div class="relative w-[400px] h-[400px] flex items-center justify-center">
-                    <!-- SVG de fundo -->
-                    <svg class="absolute top-0 left-0 z-0" width="400" height="400" viewBox="0 0 400 400"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#F5f5f5;stop-opacity:1"></stop>
-                                <stop offset="100%" style="stop-color:#Ded9e2;stop-opacity:1"></stop>
-                            </linearGradient>
-                        </defs>
-
-                        <!-- Background shape -->
-                        <circle cx="200" cy="200" r="180" fill="url(#grad1)"></circle>
-
-                        <!-- Tech symbols -->
-                        <text x="175" y="235" font-family="Arial" font-size="10" fill="white">{ code }</text>
-                        <circle cx="120" cy="280" r="5" fill="white"></circle>
-                        <circle cx="280" cy="280" r="5" fill="white"></circle>
-
-                        <!-- Decorative elements -->
-                        <circle cx="320" cy="100" r="15" fill="#682857" opacity="0.7"></circle>
-                        <circle cx="340" cy="130" r="10" fill="#8d5e81" opacity="0.7"></circle>
-                        <circle cx="80" cy="100" r="15" fill="#682857" opacity="0.7"></circle>
-                        <circle cx="60" cy="130" r="10" fill="#8d5e81" opacity="0.7"></circle>
-
-                        <!-- Binary code background -->
-                        <text x="50" y="50" font-family="monospace" font-size="10" fill="#682857"
-                            opacity="0.3">10110101</text>
-                        <text x="300" y="70" font-family="monospace" font-size="10" fill="#682857"
-                            opacity="0.3">01001010</text>
-                        <text x="70" y="350" font-family="monospace" font-size="10" fill="#682857"
-                            opacity="0.3">11001010</text>
-                        <text x="270" y="330" font-family="monospace" font-size="10" fill="#682857"
-                            opacity="0.3">10101100</text>
-                    </svg>
-
-                    <!-- Imagem centralizada no círculo -->
-                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                        <img src="assets/icons/Variação_logo_elíptica_fundo_branco-removebg-preview.png"
-                            alt="Logo WomanTech" class="w-48 h-48 object-contain" />
-                    </div>
-
-                    <!-- Animated circles -->
-                    <div class="absolute top-0 left-0 w-full h-full z-0">
-                        <div class="absolute w-16 h-16 rounded-full bg-[#682857] opacity-20 animate-ping"
-                            style="top: 20%; left: 70%; animation-duration: 3s;"></div>
-                        <div class="absolute w-12 h-12 rounded-full bg-[#8d5e81] opacity-20 animate-ping"
-                            style="top: 60%; left: 20%; animation-duration: 4s;"></div>
-                        <div class="absolute w-8 h-8 rounded-full bg-[#Ded9e2] opacity-20 animate-ping"
-                            style="top: 40%; left: 40%; animation-duration: 5s;"></div>
-                    </div>
+        <section class="section section--white" aria-labelledby="impact-title">
+            <div class="container">
+                <h2 class="section-title" id="impact-title">Nosso impacto</h2>
+                <p class="section-intro">Conheça os resultados e as oportunidades criadas pelo WomanTech.</p>
+                <div class="stats-grid">
+                    <article class="stat-card"><strong>200+</strong><span>Alunas alcançadas*</span></article>
+                    <article class="stat-card"><strong>3</strong><span>Edições realizadas*</span></article>
+                    <article class="stat-card"><strong>+</strong><span>Oportunidades de aprendizado</span></article>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="hero-wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C57.32,118.92,163.89,91.2,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-[#F5f5f5]">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-[#682857] mb-4">Sobre o Projeto</h2>
-                <div class="w-24 h-1 bg-[#8d5e81] mx-auto rounded-full mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Conheça nossa missão de transformar o cenário
-                    tecnológico através do empoderamento feminino.</p>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-center gap-10">
-                <div class="md:w-1/2 animated-bg p-8 rounded-2xl shadow-lg">
-                    <div class="relative z-10">
-                        <h3 class="text-2xl font-bold text-[#682857] mb-4">Nossa História</h3>
-                        <p class="mb-6 text-gray-700">
-                            O <strong>Woman Tech</strong> é um projeto de extensão parceiro do programa Meninas
-                            Digitais, da Sociedade Brasileira de Computação. Seu principal objetivo é despertar o
-                            interesse do público feminino por cursos e carreiras na área de tecnologia.
-                        </p>
-                        <p class="mb-6 text-gray-700">
-                            Criado em 2024 pela Coordenadora Marcilyanne Gois , a iniciativa é desenvolvida e executada
-                            por alunas e professoras colaboradoras dos cursos de tecnologia da Faculdade de Computação e
-                            Informática (FCI). As ações do projeto envolvem capacitações tecnológicas e oficinas
-                            práticas, o fortalecimento do protagonismo feminino, a conexão entre estudantes e mulheres
-                            de destaque nas áreas de STEM (Ciência, Tecnologia, Engenharia e Matemática).
-                        </p>
-                        <p class="text-gray-700">
-                            O projeto busca não apenas despertar o interesse por tecnologia, mas também criar um
-                            ambiente acolhedor e inspirador para as mulheres, promovendo a troca de experiências e o
-                            fortalecimento de uma rede de apoio mútuo.
-                        </p>
-                        <p class="mt-6 text-gray-700">
-                            As atividades do projeto são voltadas para meninas de ONGs e escolas públicas e contam com o
-                            apoio de alunas, as participantes podem conhecer diversas áreas da tecnologia, além de
-                            receber orientações sobre competências não técnicas, como comunicação e pensamento crítico e
-                            o desenvolvimento pessoal.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="md:w-1/2 grid grid-cols-2 gap-6">
-                    <div class="card bg-white p-6 rounded-xl shadow-md relative"
-                        style="opacity: 0; transform: translateY(20px); transition: 0.6s;">
-                        <div class="text-4xl text-[#682857] mb-4">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Missão</h4>
-                        <p class="text-gray-600">Despertar o interesse do público feminino por cursos e carreiras na
-                            área de tecnologia.</p>
-                    </div>
-
-                    <div class="card bg-white p-6 rounded-xl shadow-md relative"
-                        style="opacity: 0; transform: translateY(20px); transition: 0.6s;">
-                        <div class="text-4xl text-[#682857] mb-4">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Impacto</h4>
-                        <p class="text-gray-600">Mais de 200 alunas impactadas em 3 edições, com apoio de 7 professoras
-                            colaboradoras e duas bolsas PIBEX.</p>
-                    </div>
-
-                    <div class="card bg-white p-6 rounded-xl shadow-md relative"
-                        style="opacity: 0; transform: translateY(20px); transition: 0.6s;">
-                        <div class="text-4xl text-[#682857] mb-4">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Visão</h4>
-                        <p class="text-gray-600"> Tornar-se referência em inclusão feminina na tecnologia, conectando e
-                            inspirando mulheres a liderar e inovar nas áreas de ciência e tecnologia.</p>
-                    </div>
-
-                    <div class="card bg-white p-6 rounded-xl shadow-md relative"
-                        style="opacity: 0; transform: translateY(20px); transition: 0.6s;">
-                        <div class="text-4xl text-[#682857] mb-4">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Público-alvo</h4>
-                        <p class="text-gray-600">Alunas de ONGs locais, estudantes do ensino fundamental e médio e
-                            mulheres interessadas em tecnologia ou em transição de carreira.</p>
-                    </div>
+        <section class="section" aria-labelledby="explore-title">
+            <div class="container">
+                <h2 class="section-title" id="explore-title">Explore o WomanTech</h2>
+                <p class="section-intro">Conheça as iniciativas do projeto e encontre formas de participar.</p>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Projetos e eventos</h3>
+                        <p>Conheça as atividades, oficinas e eventos realizados pelo WomanTech.</p>
+                        <a class="text-link" href="projetos.html">Conheça nossas iniciativas</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Formação em tecnologia</h3>
+                        <p>Explore os cursos e as possibilidades de aprendizado na área de tecnologia.</p>
+                        <a class="text-link" href="cursos.html">Conheça os cursos</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Faça parte</h3>
+                        <p>Quer conhecer melhor o projeto ou descobrir como participar?</p>
+                        <a class="text-link" href="contato.html">Entre em contato</a>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="mt-16 text-center">
-                <div class="inline-flex items-center gap-4 bg-white py-3 px-6 rounded-full shadow-md">
-                    <div class="flex gap-2">
-                        <div class="w-3 h-3 rounded-full bg-[#682857] animate-pulse"></div>
-                        <div class="w-3 h-3 rounded-full bg-[#8d5e81] animate-pulse" style="animation-delay: 0.2s">
-                        </div>
-                        <div class="w-3 h-3 rounded-full bg-[#D3d3d3] animate-pulse" style="animation-delay: 0.4s">
-                        </div>
-                    </div>
-                    <span class="font-bold text-[#682857]">Transformando o futuro da tecnologia, uma mulher de cada
-                        vez</span>
+        <section class="section section--white" aria-labelledby="partners-title">
+            <div class="container">
+                <h2 class="section-title" id="partners-title">Parceiros e iniciativas</h2>
+                <p class="section-intro">Conheça organizações relacionadas ao ecossistema de tecnologia e inclusão.</p>
+                <div class="partner-list">
+                    <span class="partner-name">Meninas Digitais</span>
+                    <span class="partner-name">Equinix</span>
+                    <span class="partner-name">Sec4U</span>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-[#682857] mb-4">Nossa Equipe</h2>
-                <div class="w-24 h-1 bg-[#8d5e81] mx-auto rounded-full mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Conheça as pessoas incríveis que fazem o WomanTech
-                    acontecer.</p>
-            </div>
-
-            <div class="flex flex-col items-center gap-16">
-
-                <div class="w-full lg:flex lg:gap-10 lg:items-start">
-
-                    <div class="w-full lg:w-auto text-center mb-10 lg:mb-0">
-                        <h3 class="text-2xl font-bold text-[#682857] mb-6">Coordenação</h3>
-                        <div class="flex flex-wrap justify-center gap-6">
-                            <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                                <img src="assets/image/Marcilyanne.jpg" alt="Professora Marcilyanne Moreira Gois"
-                                    class="w-full h-64 object-cover">
-                                <div class="overlay flex flex-col justify-end p-4">
-                                    <h4 class="text-white font-bold text-xl">Profª. Drª. Marcilyanne Moreira Gois</h4>
-                                    <p class="text-white opacity-90">Coordenadora</p>
-                                    <div class="flex mt-2 space-x-3">
-                                        <a href="https://www.linkedin.com/in/marcilyanne-gois-287366126/"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                        <a href="mailto:marcillyanne.gois@mackenzie.br"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w-full lg:flex-1 text-center">
-                        <h3 class="text-2xl font-bold text-[#682857] mb-6">Professoras</h3>
-                        <div class="flex flex-wrap justify-center gap-6">
-                            <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                                <img src="assets/image/Daniela.jpg" alt="Professora" class="w-full h-64 object-cover">
-                                <div class="overlay flex flex-col justify-end p-4">
-                                    <h4 class="text-white font-bold text-xl">Profª. Drª. Daniela Vieira Cunha</h4>
-                                    <p class="text-white opacity-90">Diretora</p>
-                                    <div class="flex mt-2 space-x-3">
-                                        <a href="https://www.linkedin.com/in/daniela-cunha-87b2833/"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                        <a href="mailto:daniela.cunha@mackenzie.br"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                                <img src="assets/image/Andreia.jpeg" alt="Professora" class="w-full h-64 object-cover">
-                                <div class="overlay flex flex-col justify-end p-4">
-                                    <h4 class="text-white font-bold text-xl">Profª. Drª. Andreia Cristina do Santos
-                                        Gusmão</h4>
-                                    <p class="text-white opacity-90">Professora</p>
-                                    <div class="flex mt-2 space-x-3">
-                                        <a href="https://www.linkedin.com/in/andreia-gusmao-1rth5r/"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                        <a href="mailto:andreia.gusmao@mackenzie.br"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                                <img src="assets/image/Carolina.jpg" alt="Professora" class="w-full h-64 object-cover">
-                                <div class="overlay flex flex-col justify-end p-4">
-                                    <h4 class="text-white font-bold text-xl">Profª. Drª. Carolina Toledo Ferraz</h4>
-                                    <p class="text-white opacity-90">Professora</p>
-                                    <div class="flex mt-2 space-x-3">
-                                        <a href="https://www.linkedin.com/in/carolina-ferraz-a5a9558/"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                        <a href="mailto:carolina.ferraz@mackenzie.br"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                                <img src="assets/image/Cristiane.jpeg" alt="Professora"
-                                    class="w-full h-64 object-cover">
-                                <div class="overlay flex flex-col justify-end p-4">
-                                    <h4 class="text-white font-bold text-xl">Profª. Drª. Cristiane Camilo Hernandez</h4>
-                                    <p class="text-white opacity-90">Professora</p>
-                                    <div class="flex mt-2 space-x-3">
-                                        <a href="https://www.linkedin.com/in/cristiane-hernandez-874a72144/"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                        <a href="mailto:cristiane.hernandez@mackenzie.br"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                                <img src="assets/image/Debora.jpg" alt="Professora" class="w-full h-64 object-cover">
-                                <div class="overlay flex flex-col justify-end p-4">
-                                    <h4 class="text-white font-bold text-xl">Profª. Drª. Débora Bezerra Linhares Libório
-                                    </h4>
-                                    <p class="text-white opacity-90">Professora</p>
-                                    <div class="flex mt-2 space-x-3">
-                                        <a href="https://www.linkedin.com/in/d%C3%A9bora-bezerra-lib%C3%B3rio-a9aa9b93/"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                        <a href="mailto:debora.liborio@mackenzie.br"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                                <img src="assets/image/Patricia.png" alt="Professora" class="w-full h-64 object-cover">
-                                <div class="overlay flex flex-col justify-end p-4">
-                                    <h4 class="text-white font-bold text-xl">Profª. Mª. Patricia Bonezi Nunes da Mota
-                                    </h4>
-                                    <p class="text-white opacity-90">Professora</p>
-                                    <div class="flex mt-2 space-x-3">
-                                        <a href="https://www.linkedin.com/in/patricia-mota-msc-a28247/"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                        <a href="mailto:patricia.mota@mackenzie.br"
-                                            class="text-white hover:text-[#Ded9e2]"><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w-full text-center mt-10">
-                    <h3 class="text-2xl font-bold text-[#682857] mb-6">Bolsistas e Voluntárias</h3>
-                    <div class="flex flex-wrap justify-center gap-6">
-                        <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                            <img src="assets/image/Glenda.jpeg" alt="Bolsista Glenda" class="w-full h-64 object-cover">
-                            <div class="overlay flex flex-col justify-end p-4">
-                                <h4 class="text-white font-bold text-xl">Glenda Miléo Trigo</h4>
-                                <p class="text-white opacity-90">Bolsista</p>
-                                <div class="flex mt-2 space-x-3">
-                                    <a href="https://www.linkedin.com/in/glenda-mil%C3%A9o-trigo-53594b204/"
-                                        class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-white hover:text-[#Ded9e2]"><i
-                                            class="fas fa-envelope"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                            <img src="assets/image/Júlia.jpeg" alt="Bolsista Júlia" class="w-full h-64 object-cover">
-                            <div class="overlay flex flex-col justify-end p-4">
-                                <h4 class="text-white font-bold text-xl">Júlia Leite Furlan</h4>
-                                <p class="text-white opacity-90">Bolsista</p>
-                                <div class="flex mt-2 space-x-3">
-                                    <a href="https://www.linkedin.com/in/julia-leite-furlan/"
-                                        class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-white hover:text-[#Ded9e2]"><i
-                                            class="fas fa-envelope"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="team-card relative rounded-xl overflow-hidden shadow-md">
-                            <img src="assets/image/Marina.jpeg" alt="Bolsista Marina" class="w-full h-64 object-cover">
-                            <div class="overlay flex flex-col justify-end p-4">
-                                <h4 class="text-white font-bold text-xl">Marina Lucas Martins</h4>
-                                <p class="text-white opacity-90">Bolsista</p>
-                                <div class="flex mt-2 space-x-3">
-                                    <a href="https://www.linkedin.com/in/marinalucasmartins/"
-                                        class="text-white hover:text-[#Ded9e2]"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-white hover:text-[#Ded9e2]"><i
-                                            class="fas fa-envelope"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section 
-    <section id="publications" class="py-20 bg-[#F5f5f5]">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-[#682857] mb-4">Publicações</h2>
-                <div class="w-24 h-1 bg-[#8d5e81] mx-auto rounded-full mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Artigos e estudos desenvolvidos pela nossa equipe.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="publication-card bg-white rounded-xl overflow-hidden shadow-md" style="opacity: 0; transform: translateY(20px); transition: 0.6s;">
-                    <div class="h-48 bg-gradient-to-r from-[#682857] to-[#8d5e81] flex items-center justify-center p-6">
-                        <i class="fas fa-chart-line text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="bg-[#Ded9e2] text-[#682857] text-xs font-bold px-3 py-1 rounded-full">Pesquisa</span>
-                            <span class="text-gray-500 text-sm">Maio 2023</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-[#682857]">Vivamus et fringilla lectus</h3>
-                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et fringilla lectus. Pellentesque efficitur tempus tortor in tempor. Morbi at velit metus.</p>
-                        <a href="#" class="inline-flex items-center text-[#682857] font-bold hover:underline">
-                            Ler artigo
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="publication-card bg-white rounded-xl overflow-hidden shadow-md" style="opacity: 0; transform: translateY(20px); transition: 0.6s;">
-                    <div class="h-48 bg-gradient-to-r from-[#682857] to-[#8d5e81] flex items-center justify-center p-6">
-                        <i class="fas fa-users-cog text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="bg-[#Ded9e2] text-[#682857] text-xs font-bold px-3 py-1 rounded-full">Estudo de Caso</span>
-                            <span class="text-gray-500 text-sm">Março 2023</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-[#682857]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                        <p class="text-gray-600 mb-4">Curabitur vulputate nunc et tellus efficitur dapibus. Donec quis molestie elit. Nam quis ex placerat, ornare nibh in, imperdiet massa. Integer pellentesque tincidunt sollicitudin. </p>
-                        <a href="#" class="inline-flex items-center text-[#682857] font-bold hover:underline">
-                            Ler artigo
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="publication-card bg-white rounded-xl overflow-hidden shadow-md" style="opacity: 0; transform: translateY(20px); transition: 0.6s;">
-                    <div class="h-48 bg-gradient-to-r from-[#682857] to-[#8d5e81] flex items-center justify-center p-6">
-                        <i class="fas fa-brain text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="bg-[#Ded9e2] text-[#682857] text-xs font-bold px-3 py-1 rounded-full">Artigo</span>
-                            <span class="text-gray-500 text-sm">Janeiro 2023</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-[#682857]">Duis in aliquam erat, vitae efficitur enim.</h3>
-                        <p class="text-gray-600 mb-4"> Aliquam faucibus quam eget lorem vestibulum gravida. Etiam pharetra urna at risus tempus, eget suscipit dolor hendrerit. Nam imperdiet nunc rutrum laoreet lobortis.</p>
-                        <a href="#" class="inline-flex items-center text-[#682857] font-bold hover:underline">
-                            Ler artigo
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="#" class="btn-primary px-8 py-3 rounded-full font-bold inline-flex items-center">
-                    Ver todas as publicações
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-    -->
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-[#682857] mb-4">Nossos Projetos</h2>
-                <div class="w-24 h-1 bg-[#8d5e81] mx-auto rounded-full mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Conheça as iniciativas que estamos desenvolvendo para
-                    transformar o cenário tecnológico.</p>
-            </div>
-
-            <div class="relative">
-                <!-- Setas de navegação -->
-                <button
-                    class="left-button absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-2 z-10">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                    </svg>
-                </button>
-                <button
-                    class="right-button absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-300 rounded-full p-2 z-10">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
-
-                <div class="overflow-x-auto py-2 px-8">
-                    <div class="flex space-x-6" id="card-projeto">
-
-                        <!-- CADS AQUI -->
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <a href="projetos.html" class="btn-primary px-8 py-3 rounded-full font-bold inline-flex items-center">
-                    Ver todos os projetos
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-[#F5f5f5]">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-[#682857] mb-4">Entre em Contato</h2>
-                <div class="w-24 h-1 bg-[#8d5e81] mx-auto rounded-full mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Estamos sempre abertos para novas parcerias e
-                    colaborações.</p>
-            </div>
-
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div class="flex flex-col md:flex-row">
-
-                    <!-- Lado Roxo: Informações -->
-                    <div
-                        class="md:w-1/2 bg-gradient-to-br from-[#682857] to-[#8d5e81] p-10 text-white flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
-                            <div class="flex flex-col space-y-6">
-                                <div class="flex items-center">
-                                    <div
-                                        class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
-                                        <i class="fas fa-envelope text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm opacity-80">Email</p>
-                                        <p class="font-bold"> womantech.fci@gmail.com</p>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center">
-                                    <div
-                                        class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
-                                        <i class="fab fa-instagram text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm opacity-80">Instagram</p>
-                                        <p class="font-bold">@womantech_fci</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mt-10">
-                            <p class="mb-4 font-bold">Siga-nos nas redes sociais</p>
-                            <div class="flex space-x-4">
-                                <a href="#"
-                                    class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-[#682857] transition-all duration-300">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Lado Branco: Formulário -->
-                    <div class="md:w-1/2 p-10">
-                        <h3 class="text-2xl font-bold text-[#682857] mb-6">Envie uma Mensagem</h3>
-                        <form action="https://formspree.io/f/mzzaoowb" method="POST" class="space-y-4">
-                            <input type="text" name="_honey" style="display:none">
-                            <input type="hidden" name="_captcha" value="false">
-
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700">Nome</label>
-                                <input type="text" name="name" placeholder="Seu nome"
-                                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#682857]">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700">Email</label>
-                                <input type="email" name="email" placeholder="seu@email.com"
-                                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#682857]">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700">Assunto</label>
-                                <input type="text" name="subject" placeholder="Assunto da mensagem"
-                                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#682857]">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700">Mensagem</label>
-                                <textarea name="message" rows="4" placeholder="Digite sua mensagem..."
-                                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#682857]"></textarea>
-                            </div>
-                            <button type="submit"
-                                class="bg-[#682857] text-white font-semibold px-6 py-2 rounded-lg hover:bg-[#8d5e81] transition-all duration-300">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+        </section>
+    </main>
     <div id="footer"></div>
-
-    <script>
-        (function () {
-            function c() {
-                var b = a.contentDocument || a.contentWindow.document;
-
-                if (b) {
-                    var d = b.createElement('script');
-                    d.innerHTML = "window.__CF$cv$params={r:'94488e4107b95221',t:'MTc0ODA0NTI3Ni4wMDAwMDA='};" +
-                        "var a=document.createElement('script');" +
-                        "a.nonce='';" +
-                        "a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';" +
-                        "document.getElementsByTagName('head')[0].appendChild(a);";
-                    b.getElementsByTagName('head')[0].appendChild(d);
-                }
-            }
-            if (document.body) {
-                var a = document.createElement('iframe');
-                a.height = 1;
-                a.width = 1;
-                a.style.position = 'absolute';
-                a.style.top = 0;
-                a.style.left = 0;
-                a.style.border = 'none';
-                a.style.visibility = 'hidden';
-                document.body.appendChild(a);
-                if ('loading' !== document.readyState)
-                    c();
-                else if (window.addEventListener)
-                    document.addEventListener('DOMContentLoaded', c);
-                else {
-                    var e = document.onreadystatechange || function () { };
-                    document.onreadystatechange = function (b) {
-                        e(b);
-                        'loading' !== document.readyState && (document.onreadystatechange = e, c());
-                    }
-                }
-            }
-        })();
-    </script>
-    <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"
-        src="https://www.cloudflare.com/cdn-cgi/challenge-platform/h/g"></iframe>
-
 </body>
 
 </html>

@@ -1,16 +1,3 @@
-:root {
-    --primary: #682857;
-    --secondary: #8d5e81;
-    --light-gray: #D3d3d3;
-    --lighter-gray: #Ded9e2;
-    --white-gray: #F5f5f5;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'PT Sans', sans-serif;
