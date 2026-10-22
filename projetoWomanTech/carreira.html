@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreira | WomanTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/carreira.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <section class="career-banner">
+            <div class="container">
+                <p class="breadcrumb breadcrumb--light">Início / Carreira</p>
+                <h1>Portal de carreira</h1>
+                <p>Vagas em tecnologia — aprendiz, estágio e CLT. Toda vaga tem prazo e sai do mural quando vence.</p>
+            </div>
+        </section>
+        <section class="section career-section">
+            <div class="container career-layout">
+                <aside class="career-filters" aria-label="Filtros de vagas">
+                    <div class="filters-heading">
+                        <h2>Filtrar vagas</h2><button type="button" id="career-reset"
+                            class="reset-filters">Limpar</button>
+                    </div>
+                    <label class="filter-label" for="career-search">Buscar</label><input id="career-search"
+                        class="control-input" type="search" placeholder="Cargo, tecnologia ou empresa...">
+                    <fieldset>
+                        <legend>Nível</legend><label><input type="checkbox" value="aprendiz" data-career-level>
+                            Aprendiz</label><label><input type="checkbox" value="estagio" data-career-level>
+                            Estágio</label><label><input type="checkbox" value="junior" data-career-level>
+                            Júnior</label><label><input type="checkbox" value="pleno" data-career-level>
+                            Pleno</label><label><input type="checkbox" value="senior" data-career-level> Sênior</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Área</legend>
+                        <div class="area-chips"><label><input type="checkbox" value="dev"
+                                    data-career-area><span>Dev</span></label><label><input type="checkbox" value="dados"
+                                    data-career-area><span>Dados</span></label><label><input type="checkbox"
+                                    value="infra" data-career-area><span>Infra</span></label><label><input
+                                    type="checkbox" value="seguranca"
+                                    data-career-area><span>Segurança</span></label><label><input type="checkbox"
+                                    value="ux" data-career-area><span>UX</span></label><label><input type="checkbox"
+                                    value="produto" data-career-area><span>Produto</span></label><label><input
+                                    type="checkbox" value="suporte" data-career-area><span>Suporte</span></label></div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Modalidade</legend><label><input type="checkbox" value="remoto" data-career-modality>
+                            Remoto</label><label><input type="checkbox" value="hibrido" data-career-modality>
+                            Híbrido</label><label><input type="checkbox" value="presencial" data-career-modality>
+                            Presencial</label>
+                    </fieldset>
+                    <label class="filter-label" for="career-city">Cidade</label><input id="career-city"
+                        class="control-input" type="search" placeholder="Ex.: São Paulo">
+                    <label class="affirmative-toggle"><input id="career-affirmative" type="checkbox"><span
+                            class="toggle-ui" aria-hidden="true"></span><span>Só vagas afirmativas</span></label>
+                </aside>
+                <div class="career-results">
+                    <div class="career-results__heading">
+                        <div>
+                            <h2>Oportunidades</h2>
+                            <p id="career-result-count" aria-live="polite">5 vagas demonstrativas</p>
+                        </div><label class="sort-label" for="career-sort">Ordenar por<select id="career-sort">
+                                <option value="deadline">Prazo mais próximo</option>
+                                <option value="level">Nível</option>
+                                <option value="title">Cargo (A–Z)</option>
+                            </select></label>
+                    </div>
+                    <div class="prototype-notice prototype-notice--career"><strong>Protótipo:</strong> estas vagas são
+                        exemplos visuais, não oportunidades reais. O cadastro por administradoras/integrantes, os links
+                        oficiais de candidatura e os favoritos vinculados à conta serão integrados na Fase 3.</div>
+                    <div class="career-list" id="career-list">
+                        <article class="job-card" data-title="Estágio em Desenvolvimento Web"
+                            data-employer="Empresa parceira" data-level="estagio" data-area="dev"
+                            data-modality="hibrido" data-city="São Paulo" data-deadline="2026-11-30"
+                            data-affirmative="true" data-text="html css javascript front end desenvolvimento">
+                            <div class="job-icon" aria-hidden="true">&lt;/&gt;</div>
+                            <div class="job-main">
+                                <h3>Estágio em Desenvolvimento Web</h3>
+                                <p class="job-company">Empresa parceira <span>•</span> Híbrido <span>•</span> São Paulo
+                                    <span>•</span> Dev</p>
+                                <div class="job-tags"><span class="job-level">Estágio</span><span
+                                        class="affirmative-badge">Vaga afirmativa</span></div>
+                            </div>
+                            <div class="job-side"><span class="job-deadline" data-deadline-label>Até 30/11/2026</span>
+                                <div class="job-actions"><button class="save-job" type="button"
+                                        aria-label="Salvar Estágio em Desenvolvimento Web"
+                                        aria-pressed="false">♡</button><button
+                                        class="button button--small button--primary apply-job"
+                                        type="button">Candidatar-se</button></div>
+                            </div>
+                        </article>
+                        <article class="job-card" data-title="Jovem Aprendiz em TI"
+                            data-employer="Empresa de tecnologia" data-level="aprendiz" data-area="suporte"
+                            data-modality="presencial" data-city="Osasco" data-deadline="2026-10-25"
+                            data-affirmative="false" data-text="suporte help desk informática aprendiz">
+                            <div class="job-icon" aria-hidden="true">▦</div>
+                            <div class="job-main">
+                                <h3>Jovem Aprendiz em TI</h3>
+                                <p class="job-company">Empresa de tecnologia <span>•</span> Presencial <span>•</span>
+                                    Osasco <span>•</span> Suporte</p>
+                                <div class="job-tags"><span class="job-level">Aprendiz</span></div>
+                            </div>
+                            <div class="job-side"><span class="job-deadline" data-deadline-label>Até 25/10/2026</span>
+                                <div class="job-actions"><button class="save-job" type="button"
+                                        aria-label="Salvar Jovem Aprendiz em TI" aria-pressed="false">♡</button><button
+                                        class="button button--small button--primary apply-job"
+                                        type="button">Candidatar-se</button></div>
+                            </div>
+                        </article>
+                        <article class="job-card" data-title="Analista de Dados Júnior"
+                            data-employer="Fintech de pagamentos" data-level="junior" data-area="dados"
+                            data-modality="remoto" data-city="São Paulo" data-deadline="2026-11-05"
+                            data-affirmative="true" data-text="sql planilhas python dashboards análise">
+                            <div class="job-icon" aria-hidden="true">◔</div>
+                            <div class="job-main">
+                                <h3>Analista de Dados Júnior</h3>
+                                <p class="job-company">Fintech de pagamentos <span>•</span> Remoto <span>•</span> São
+                                    Paulo <span>•</span> Dados</p>
+                                <div class="job-tags"><span class="job-level">Júnior</span><span
+                                        class="affirmative-badge">Vaga afirmativa</span></div>
+                            </div>
+                            <div class="job-side"><span class="job-deadline" data-deadline-label>Até 05/11/2026</span>
+                                <div class="job-actions"><button class="save-job" type="button"
+                                        aria-label="Salvar Analista de Dados Júnior"
+                                        aria-pressed="false">♡</button><button
+                                        class="button button--small button--primary apply-job"
+                                        type="button">Candidatar-se</button></div>
+                            </div>
+                        </article>
+                        <article class="job-card" data-title="Estágio em Segurança da Informação"
+                            data-employer="Empresa de tecnologia" data-level="estagio" data-area="seguranca"
+                            data-modality="hibrido" data-city="São Paulo" data-deadline="2026-10-28"
+                            data-affirmative="false" data-text="cibersegurança redes privacidade">
+                            <div class="job-icon" aria-hidden="true">♢</div>
+                            <div class="job-main">
+                                <h3>Estágio em Segurança da Informação</h3>
+                                <p class="job-company">Empresa de tecnologia <span>•</span> Híbrido <span>•</span> São
+                                    Paulo <span>•</span> Segurança</p>
+                                <div class="job-tags"><span class="job-level">Estágio</span></div>
+                            </div>
+                            <div class="job-side"><span class="job-deadline" data-deadline-label>Até 28/10/2026</span>
+                                <div class="job-actions"><button class="save-job" type="button"
+                                        aria-label="Salvar Estágio em Segurança da Informação"
+                                        aria-pressed="false">♡</button><button
+                                        class="button button--small button--primary apply-job"
+                                        type="button">Candidatar-se</button></div>
+                            </div>
+                        </article>
+                        <article class="job-card" data-title="Desenvolvedora Front-end Pleno"
+                            data-employer="Startup de educação" data-level="pleno" data-area="dev"
+                            data-modality="remoto" data-city="Remoto - Brasil" data-deadline="2026-11-12"
+                            data-affirmative="true" data-text="frontend javascript react acessibilidade">
+                            <div class="job-icon" aria-hidden="true">&lt;/&gt;</div>
+                            <div class="job-main">
+                                <h3>Desenvolvedora Front-end Pleno</h3>
+                                <p class="job-company">Startup de educação <span>•</span> Remoto <span>•</span> Dev</p>
+                                <div class="job-tags"><span class="job-level">Pleno</span><span
+                                        class="affirmative-badge">Vaga afirmativa</span></div>
+                            </div>
+                            <div class="job-side"><span class="job-deadline" data-deadline-label>Até 12/11/2026</span>
+                                <div class="job-actions"><button class="save-job" type="button"
+                                        aria-label="Salvar Desenvolvedora Front-end Pleno"
+                                        aria-pressed="false">♡</button><button
+                                        class="button button--small button--primary apply-job"
+                                        type="button">Candidatar-se</button></div>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="empty-state" id="career-empty" hidden>Nenhuma vaga demonstrativa corresponde aos filtros
+                        selecionados.</p>
+                    <p class="career-feedback" id="career-feedback" role="status" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+</body>
+
+</html>

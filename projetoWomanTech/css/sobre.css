@@ -1,0 +1,118 @@
+/* SOBRE */
+.about-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(280px, .8fr);
+    gap: 24px;
+    align-items: stretch
+}
+
+.content-panel,
+.founder-panel,
+.purpose-card {
+    padding: 27px;
+    border: 1px solid #ece6ee;
+    border-radius: var(--radius);
+    background: #fff;
+    box-shadow: var(--shadow)
+}
+
+.content-panel h2,
+.founder-panel h2,
+.purpose-card h2 {
+    color: var(--primary)
+}
+
+.content-panel h2 {
+    font-size: 1.55rem
+}
+
+.content-panel p:not(.section-kicker) {
+    color: #615963;
+    line-height: 1.8
+}
+
+.founder-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(145deg, #fff, #f0e7ef)
+}
+
+.founder-mark {
+    display: grid;
+    width: 78px;
+    height: 78px;
+    place-items: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 800
+}
+
+.founder-panel h2 {
+    margin-bottom: 12px;
+    font-size: 1.3rem
+}
+
+.founder-panel p:last-child {
+    margin-bottom: 0;
+    color: #655d67
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px
+}
+
+.purpose-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.purpose-number {
+    display: grid;
+    width: 35px;
+    height: 35px;
+    place-items: center;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    color: var(--primary);
+    background: #f0e5ef;
+    font-family: var(--font-heading);
+    font-size: .8rem;
+    font-weight: 800
+}
+
+.purpose-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem
+}
+
+.purpose-card p {
+    margin-bottom: 10px;
+    color: #665e68;
+    font-size: .92rem;
+    line-height: 1.65
+}
+
+.purpose-card .content-note {
+    margin-top: auto
+}
+
+@media(max-width:760px) {
+
+    .about-layout,
+    .purpose-grid {
+        grid-template-columns: 1fr
+    }
+
+    .founder-panel {
+        min-height: unset
+    }
+}

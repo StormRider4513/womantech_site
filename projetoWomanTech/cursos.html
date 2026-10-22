@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos | WomanTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Raleway:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/cursos.css">
@@ -16,34 +18,124 @@
 <body>
     <div id="header"></div>
     <main>
-        <section class="page-hero">
-            <div class="container">
-                <p class="eyebrow">Aprenda e explore</p>
-                <h1>Cursos e trilhas</h1>
-                <p>Conheça os caminhos de aprendizagem e os conteúdos de tecnologia relacionados ao projeto.</p>
+        <section class="courses-banner">
+            <div class="container courses-banner__inner">
+                <div>
+                    <p class="breadcrumb breadcrumb--light">Início / Cursos</p>
+                    <h1>Cursos WomanTech</h1>
+                    <p>Trilhas gratuitas do iniciante ao avançado, com aulas gravadas, prova final e certificado.</p>
+                </div>
+                <div class="courses-banner__actions"><a class="button button--light" href="entrar.html">Criar conta
+                        grátis</a><a class="button button--hero-outline" href="entrar.html">Já tenho conta</a></div>
             </div>
         </section>
-        <section class="section">
+        <section class="section courses-section">
             <div class="container">
-                <h2 class="section-title">Trilhas de aprendizagem</h2>
-                <p class="section-intro">Esta página apresenta somente a proposta de formação. Aulas, progresso, provas e certificados exigirão uma plataforma própria no futuro.</p>
-                <div class="course-grid">
-                    <article class="course-card"><span class="course-tag">Iniciante</span>
-                        <h3>Lógica de programação</h3>
-                        <p>Conceitos fundamentais para desenvolver o raciocínio computacional.</p><span
-                            class="status-label">Conteúdo a definir</span>
+                <div class="catalog-controls"><label class="search-field"><span aria-hidden="true">⌕</span><span
+                            class="visually-hidden">Buscar trilha ou tema</span><input id="course-search" type="search"
+                            placeholder="Buscar trilha ou tema..."></label>
+                    <div class="level-filters" role="group" aria-label="Filtrar por nível"><button type="button"
+                            class="filter-chip is-active" data-course-level="all" aria-pressed="true">Todos os
+                            níveis</button><button type="button" class="filter-chip" data-course-level="iniciante"
+                            aria-pressed="false">Iniciante</button><button type="button" class="filter-chip"
+                            data-course-level="intermediario" aria-pressed="false">Intermediário</button><button
+                            type="button" class="filter-chip" data-course-level="avancado"
+                            aria-pressed="false">Avançado</button></div>
+                </div>
+                <p class="prototype-notice"><strong>Prévia da plataforma:</strong> o catálogo e os filtros funcionam
+                    neste protótipo. Login, videoaulas, progresso, provas e certificados dependem da integração prevista
+                    para a Fase 3.</p>
+                <div class="course-grid" id="course-grid">
+                    <article class="course-card" data-course-levels="iniciante intermediario avancado"
+                        data-course-search="primeiros passos programação lógica python">
+                        <div class="course-card__top"><span class="course-icon">&lt;/&gt;</span><span
+                                class="lesson-count">◷ 12 aulas</span></div>
+                        <h2>Primeiros passos em programação</h2>
+                        <p>Lógica e Python do zero.</p>
+                        <div class="level-list"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span>
+                        </div>
+                        <div class="course-card__bottom"><span>♧ Certificado previsto</span><a href="entrar.html">Ver
+                                trilha →</a></div>
                     </article>
-                    <article class="course-card"><span class="course-tag">Iniciante</span>
-                        <h3>Desenvolvimento web</h3>
-                        <p>Introdução à criação de páginas e interfaces para a web.</p><span
-                            class="status-label">Conteúdo a definir</span>
+                    <article class="course-card" data-course-levels="iniciante intermediario avancado"
+                        data-course-search="criando sites web html css ia">
+                        <div class="course-card__top"><span class="course-icon">▦</span><span class="lesson-count">◷ 15
+                                aulas</span></div>
+                        <h2>Criando sites (com e sem IA)</h2>
+                        <p>HTML, CSS e sites com IA.</p>
+                        <div class="level-list"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span>
+                        </div>
+                        <div class="course-card__bottom"><span>♧ Certificado previsto</span><a href="entrar.html">Ver
+                                trilha →</a></div>
                     </article>
-                    <article class="course-card"><span class="course-tag">Exploração</span>
-                        <h3>Carreiras em tecnologia</h3>
-                        <p>Conheça áreas de atuação, habilidades e possibilidades profissionais.</p><span
-                            class="status-label">Conteúdo a definir</span>
+                    <article class="course-card" data-course-levels="iniciante intermediario avancado"
+                        data-course-search="github versionamento portfolio repositório">
+                        <div class="course-card__top"><span class="course-icon">⑂</span><span class="lesson-count">◷ 13
+                                aulas</span></div>
+                        <h2>GitHub</h2>
+                        <p>Versionamento e portfólio.</p>
+                        <div class="level-list"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span>
+                        </div>
+                        <div class="course-card__bottom"><span>♧ Certificado previsto</span><a href="entrar.html">Ver
+                                trilha →</a></div>
+                    </article>
+                    <article class="course-card" data-course-levels="iniciante intermediario avancado"
+                        data-course-search="dados planilhas sql dashboards">
+                        <div class="course-card__top"><span class="course-icon">◔</span><span class="lesson-count">◷ 10
+                                aulas</span></div>
+                        <h2>Dados</h2>
+                        <p>Planilhas, SQL e dashboards.</p>
+                        <div class="level-list"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span>
+                        </div>
+                        <div class="course-card__bottom"><span>♧ Certificado previsto</span><a href="entrar.html">Ver
+                                trilha →</a></div>
+                    </article>
+                    <article class="course-card" data-course-levels="iniciante intermediario avancado"
+                        data-course-search="segurança digital proteção senhas dados">
+                        <div class="course-card__top"><span class="course-icon">♢</span><span class="lesson-count">◷ 6
+                                aulas</span></div>
+                        <h2>Segurança digital</h2>
+                        <p>Proteja suas contas e dados.</p>
+                        <div class="level-list"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span>
+                        </div>
+                        <div class="course-card__bottom"><span>♧ Certificado previsto</span><a href="entrar.html">Ver
+                                trilha →</a></div>
+                    </article>
+                    <article class="course-card" data-course-levels="iniciante intermediario avancado"
+                        data-course-search="ia inteligência artificial dia a dia">
+                        <div class="course-card__top"><span class="course-icon">✳</span><span class="lesson-count">◷ 9
+                                aulas</span></div>
+                        <h2>IA no dia a dia</h2>
+                        <p>Use a IA e entenda como funciona.</p>
+                        <div class="level-list"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span>
+                        </div>
+                        <div class="course-card__bottom"><span>♧ Certificado previsto</span><a href="entrar.html">Ver
+                                trilha →</a></div>
+                    </article>
+                    <article class="course-card" data-course-levels="iniciante intermediario avancado"
+                        data-course-search="empreendedorismo digital negócios projeto">
+                        <div class="course-card__top"><span class="course-icon">▤</span><span class="lesson-count">◷ 8
+                                aulas</span></div>
+                        <h2>Empreendedorismo digital</h2>
+                        <p>Agir de forma prática no seu negócio.</p>
+                        <div class="level-list"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span>
+                        </div>
+                        <div class="course-card__bottom"><span>♧ Certificado previsto</span><a href="entrar.html">Ver
+                                trilha →</a></div>
+                    </article>
+                    <article class="course-card" data-course-levels="iniciante intermediario avancado"
+                        data-course-search="pensamento computacional lógica jogos">
+                        <div class="course-card__top"><span class="course-icon">✣</span><span class="lesson-count">◷ 6
+                                aulas</span></div>
+                        <h2>Pensamento computacional</h2>
+                        <p>Raciocínio lógico com jogos e desafios.</p>
+                        <div class="level-list"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span>
+                        </div>
+                        <div class="course-card__bottom"><span>♧ Certificado previsto</span><a href="entrar.html">Ver
+                                trilha →</a></div>
                     </article>
                 </div>
+                <p class="empty-state" id="course-empty" hidden>Nenhuma trilha encontrada com esses filtros.</p>
             </div>
         </section>
     </main>
