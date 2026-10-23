@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | WomanTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/entrar.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="login-page">
+    <div id="header"></div>
+    <main class="login-main">
+        <div class="login-shell">
+            <section class="login-intro"><a class="login-brand" href="index.html"><span
+                        class="site-logo__mark">WT</span><span>WomanTech</span></a>
+                <h1>Um só lugar para aprender, organizar e crescer.</h1>
+                <p>Alunas acessam cursos e vagas. Integrantes acessam avisos, tarefas e horas. Coordenação acompanha
+                    tudo.</p>
+                <ul>
+                    <li>♧ Plataforma de cursos e certificados</li>
+                    <li>▣ Portal de carreira</li>
+                    <li>▦ Portal das integrantes</li>
+                </ul>
+            </section>
+            <section class="login-form-panel">
+                <form id="demo-login-form" class="login-form">
+                    <p class="section-kicker">Área de acesso</p>
+                    <h2>Entrar</h2>
+                    <p>Escolha como você acessa o WomanTech.</p>
+                    <div class="role-switch" role="group" aria-label="Tipo de perfil"><button type="button"
+                            data-login-role="aluna" class="is-active"
+                            aria-pressed="true">♧<span>Aluna</span></button><button type="button"
+                            data-login-role="integrante" aria-pressed="false">▦<span>Integrante</span></button><button
+                            type="button" data-login-role="admin" aria-pressed="false">◆<span>Admin</span></button>
+                    </div><label for="login-email">E-mail</label><input id="login-email" type="email"
+                        autocomplete="username" placeholder="seuemail@exemplo.com" required><label
+                        for="login-password">Senha</label><input id="login-password" type="password"
+                        autocomplete="current-password" placeholder="Sua senha" required><button
+                        class="button button--primary login-submit" type="submit">Entrar</button><a class="login-forgot"
+                        href="#login-note" id="forgot-password">Esqueci minha senha</a>
+                    <p class="signup-line">Ainda não tem conta? <a href="#login-note"
+                            id="create-account">Cadastre-se</a></p>
+                    <p class="minor-notice">Menores de 18 anos precisam de autorização de um responsável.</p>
+                    <p class="login-feedback" id="login-feedback" role="status" aria-live="polite"></p>
+                </form>
+                <p class="login-note" id="login-note">Tela de protótipo. A autenticação, a criação de conta e a
+                    recuperação de senha precisam ser conectadas ao Supabase nas próximas fases.</p>
+            </section>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
+
+</html>

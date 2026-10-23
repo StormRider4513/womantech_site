@@ -1,0 +1,233 @@
+/* PROJETOS & EVENTOS — linha do tempo por semestre */
+.projects-layout {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 22px;
+    align-items: start
+}
+
+.project-filters {
+    padding: 19px 17px;
+    border: 1px solid #eee7ef;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: var(--shadow)
+}
+
+.project-filters h2 {
+    margin: 0 0 14px;
+    color: var(--primary);
+    font-size: 1rem
+}
+
+.semester-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.semester-filter {
+    padding: 7px 9px;
+    border: 0;
+    border-radius: 7px;
+    color: #706774;
+    background: transparent;
+    text-align: left;
+    font-size: .8rem
+}
+
+.semester-filter::before {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 9px;
+    border-radius: 50%;
+    background: #b8aebd;
+    content: ""
+}
+
+.semester-filter.is-active {
+    color: var(--primary);
+    background: #f3edf3;
+    font-weight: 700
+}
+
+.semester-filter.is-active::before {
+    background: var(--primary)
+}
+
+.project-filters h3 {
+    margin: 22px 0 10px;
+    color: #655965;
+    font-size: .85rem
+}
+
+.type-filter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px
+}
+
+.type-filter-list label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6c636e;
+    font-size: .78rem
+}
+
+.type-filter-list input {
+    accent-color: var(--primary)
+}
+
+.project-content {
+    min-width: 0
+}
+
+.project-results-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 13px
+}
+
+.project-results-line p {
+    margin: 0;
+    color: #6f6570;
+    font-size: .82rem
+}
+
+.project-results-line span {
+    color: #918793;
+    font-size: .75rem
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px
+}
+
+.project-card {
+    overflow: hidden;
+    border: 1px solid #ebe5ed;
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: var(--shadow)
+}
+
+.project-visual {
+    position: relative;
+    display: grid;
+    min-height: 128px;
+    place-items: center;
+    color: #fff;
+    transition: filter var(--transition)
+}
+
+.project-visual:hover {
+    filter: brightness(1.08)
+}
+
+.project-visual--dark {
+    background: linear-gradient(135deg, #542046, #8b3d70)
+}
+
+.project-visual--plum {
+    background: linear-gradient(135deg, #642951, #9a6b93)
+}
+
+.project-visual--lilac {
+    background: linear-gradient(135deg, #8c6384, #c9afc5)
+}
+
+.project-visual--light {
+    background: linear-gradient(135deg, #d8c9d8, #f0ebf1);
+    color: var(--primary)
+}
+
+.project-visual-icon {
+    font-size: 1.7rem;
+    opacity: .92
+}
+
+.photo-count {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    font-size: .63rem;
+    color: rgba(255, 255, 255, .85)
+}
+
+.project-visual--light .photo-count {
+    color: #675567
+}
+
+.project-card-body {
+    position: relative;
+    padding: 12px 13px 14px
+}
+
+.semester-badge {
+    display: inline-block;
+    margin-top: -25px;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    border: 1px solid #e9e3ea;
+    border-radius: 999px;
+    color: var(--primary);
+    background: #fff;
+    font-size: .66rem;
+    font-weight: 700
+}
+
+.project-card h2 {
+    min-height: 2.5em;
+    margin: 0 0 6px;
+    color: #4c3347;
+    font-size: .85rem;
+    line-height: 1.28
+}
+
+.project-card p {
+    min-height: 3em;
+    margin: 0 0 9px;
+    color: #7c737e;
+    font-size: .72rem;
+    line-height: 1.45
+}
+
+.event-meta {
+    color: #9a8c9b;
+    font-size: .68rem
+}
+
+.project-note {
+    margin-top: 19px
+}
+
+@media(max-width:950px) {
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media(max-width:650px) {
+    .projects-layout {
+        grid-template-columns: 1fr
+    }
+
+    .semester-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr
+    }
+
+    .project-visual {
+        min-height: 165px
+    }
+}

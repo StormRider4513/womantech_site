@@ -1,0 +1,245 @@
+/* CURSOS — catálogo visual com busca e filtro de nível */
+.courses-banner {
+    padding: 31px 0 34px
+}
+
+.courses-banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px
+}
+
+.courses-banner__inner>div:first-child {
+    max-width: 760px
+}
+
+.courses-banner h1 {
+    margin-bottom: 10px
+}
+
+.courses-banner__actions {
+    display: flex;
+    flex: none;
+    gap: 9px
+}
+
+.catalog-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px
+}
+
+.search-field {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 9px;
+    min-width: 180px;
+    padding: 0 13px;
+    border: 1px solid #e5dfe8;
+    border-radius: 999px;
+    background: #fff;
+    color: #847b87
+}
+
+.search-field>span:first-child {
+    font-size: 1.2rem
+}
+
+.search-field input {
+    width: 100%;
+    min-height: 38px;
+    border: 0;
+    outline: none;
+    color: #4f4550;
+    background: transparent;
+    font-size: .82rem
+}
+
+.search-field input:focus-visible {
+    outline: 0
+}
+
+.level-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px
+}
+
+.level-filters .filter-chip {
+    padding: 7px 10px;
+    font-size: .7rem
+}
+
+.prototype-notice {
+    margin: 0 0 18px;
+    padding: 10px 14px;
+    border-left: 3px solid var(--secondary);
+    border-radius: 0 8px 8px 0;
+    color: #766b79;
+    background: #fff;
+    font-size: .78rem;
+    line-height: 1.5
+}
+
+.prototype-notice strong {
+    color: var(--primary)
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 13px
+}
+
+.course-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #eae4ec;
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: var(--shadow)
+}
+
+.course-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px
+}
+
+.course-icon {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 10px;
+    color: #fff;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 800
+}
+
+.lesson-count {
+    color: #867d88;
+    font-size: .68rem;
+    white-space: nowrap
+}
+
+.course-card h2 {
+    min-height: 2.5em;
+    margin: 0 0 6px;
+    color: #4c3347;
+    font-size: .86rem;
+    line-height: 1.32
+}
+
+.course-card>p {
+    min-height: 2.6em;
+    margin: 0 0 10px;
+    color: #7c737e;
+    font-size: .74rem;
+    line-height: 1.45
+}
+
+.level-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 0 0 13px
+}
+
+.level-list span {
+    padding: 4px 6px;
+    border: 1px solid #e7dfe8;
+    border-radius: 999px;
+    color: #776a79;
+    background: #fbf9fb;
+    font-size: .6rem
+}
+
+.course-card__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    margin-top: auto;
+    padding-top: 9px;
+    border-top: 1px solid #f0ecf1
+}
+
+.course-card__bottom>span {
+    color: #897f8b;
+    font-size: .62rem
+}
+
+.course-card__bottom a {
+    color: var(--primary);
+    font-size: .7rem;
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.course-card__bottom a:hover {
+    text-decoration: underline
+}
+
+.empty-state {
+    background: #fff
+}
+
+@media(max-width:1000px) {
+    .course-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .courses-banner__inner {
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .courses-banner__actions {
+        flex-wrap: wrap
+    }
+}
+
+@media(max-width:760px) {
+    .catalog-controls {
+        align-items: stretch;
+        flex-direction: column
+    }
+
+    .level-filters {
+        justify-content: flex-start
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media(max-width:520px) {
+    .course-grid {
+        grid-template-columns: 1fr
+    }
+
+    .course-card h2,
+    .course-card>p {
+        min-height: unset
+    }
+
+    .courses-banner__actions {
+        width: 100%
+    }
+
+    .courses-banner__actions .button {
+        flex: 1
+    }
+}

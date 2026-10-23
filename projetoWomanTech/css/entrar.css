@@ -1,0 +1,227 @@
+/* ENTRAR — layout do protótipo de autenticação */
+.login-main {
+    display: grid;
+    min-height: calc(100vh - 160px);
+    place-items: center;
+    padding: 35px 24px
+}
+
+.login-shell {
+    display: grid;
+    width: min(1050px, 100%);
+    min-height: 500px;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 17px;
+    background: #fff;
+    box-shadow: 0 15px 48px rgba(50, 20, 43, .12)
+}
+
+.login-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(28px, 5vw, 58px);
+    color: #fff;
+    background: linear-gradient(140deg, #5b204b, #9a7094)
+}
+
+.login-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 52px;
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 800
+}
+
+.login-brand .site-logo__mark {
+    border-color: #fff;
+    color: #fff
+}
+
+.login-intro h1 {
+    max-width: 400px;
+    margin: 0 0 15px;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 800
+}
+
+.login-intro>p {
+    max-width: 400px;
+    color: #f0e5ee;
+    font-size: .9rem
+}
+
+.login-intro ul {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+    color: #f7edf5;
+    font-size: .82rem
+}
+
+.login-form-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(24px, 4vw, 48px);
+    background: #f9f8fa
+}
+
+.login-form {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #eee7ef;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: var(--shadow)
+}
+
+.login-form h2 {
+    margin: 0 0 6px;
+    color: var(--primary);
+    font-size: 1.45rem
+}
+
+.login-form>p:not(.section-kicker) {
+    margin-bottom: 16px;
+    color: #8a808c;
+    font-size: .78rem
+}
+
+.role-switch {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    margin: 15px 0 19px
+}
+
+.role-switch button {
+    display: flex;
+    min-height: 55px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: 1px solid #e6dce7;
+    border-radius: 9px;
+    color: #776b79;
+    background: #fff;
+    font-size: .85rem
+}
+
+.role-switch button span {
+    font-size: .7rem
+}
+
+.role-switch button.is-active {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: #f6edf4
+}
+
+.login-form label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #615663;
+    font-size: .76rem;
+    font-weight: 700
+}
+
+.login-form>input {
+    width: 100%;
+    min-height: 39px;
+    padding: 10px 12px;
+    border: 1px solid #e1d8e2;
+    border-radius: 8px;
+    background: #fff;
+    font-size: .8rem
+}
+
+.login-submit {
+    width: 100%;
+    margin: 17px 0 11px
+}
+
+.login-forgot,
+.signup-line a {
+    color: var(--primary);
+    font-size: .75rem;
+    text-decoration: underline;
+    text-underline-offset: 2px
+}
+
+.login-forgot {
+    display: block;
+    text-align: center
+}
+
+.signup-line {
+    margin: 15px 0 7px !important;
+    color: #6c626e !important;
+    text-align: center
+}
+
+.minor-notice {
+    margin: 0 !important;
+    font-size: .68rem !important;
+    text-align: center
+}
+
+.login-feedback {
+    margin: 12px 0 0 !important;
+    color: var(--primary) !important;
+    font-size: .75rem !important;
+    line-height: 1.5
+}
+
+.login-note {
+    max-width: 360px;
+    margin: 12px auto 0;
+    color: #897f8b;
+    font-size: .72rem;
+    line-height: 1.5;
+    text-align: center
+}
+
+@media(max-width:750px) {
+    .login-main {
+        padding: 20px 15px
+    }
+
+    .login-shell {
+        grid-template-columns: 1fr
+    }
+
+    .login-intro {
+        padding: 30px
+    }
+
+    .login-brand {
+        margin-bottom: 25px
+    }
+
+    .login-intro h1 {
+        font-size: 1.85rem
+    }
+
+    .login-intro ul {
+        display: none
+    }
+
+    .login-form-panel {
+        padding: 20px
+    }
+
+    .login-form {
+        padding: 21px
+    }
+}

@@ -1,46 +1,25 @@
-<div id="header">
-    <nav class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3">
-                <img src="assets/icons/Variação_logo_elíptica_fundo_branco-removebg-preview.png" alt="Logo WomanTech"
-                    class="h-14 w-auto">
-                <div class="text-3xl font-bold text-[#682857] relative">
-                    Woman<span class="text-[#8d5e81]">Tech</span>
-                    <span class="absolute -bottom-1 left-0 w-full h-1 bg-[#682857] rounded-full"></span>
-                </div>
-            </a>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="site-logo" href="index.html" aria-label="WomanTech — início">
+            <span class="site-logo__mark" aria-hidden="true">WT</span>
+            <span class="site-logo__wordmark">WomanTech</span>
+        </a>
 
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html#home" class="nav-link text-gray-700 hover:text-[#682857] font-medium">Início</a>
-                <a href="index.html#about" class="nav-link text-gray-700 hover:text-[#682857] font-medium">Sobre</a>
-                <a href="index.html#team" class="nav-link text-gray-700 hover:text-[#682857] font-medium">Equipe</a>
-                <a href="materiais.html" class="nav-link text-gray-700 hover:text-[#682857] font-medium">Materiais</a>
-                <!--<a href="index.html#publications" class="nav-link text-gray-700 hover:text-[#682857] font-medium">Publicações</a>-->
-                <a href="projetos.html" class="nav-link text-gray-700 hover:text-[#682857] font-medium">Projetos</a>
-                <a href="index.html#contact" class="nav-link text-gray-700 hover:text-[#682857] font-medium">Contato</a>
-            </div>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+            aria-label="Abrir menu de navegação">
+            <span>Menu</span>
+            <span class="menu-toggle__icon" aria-hidden="true">☰</span>
+        </button>
 
-            <div class="md:hidden">
-                <button id="menu-toggle" class="focus:outline-none">
-                    <svg class="w-6 h-6 text-[#682857]" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
-            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-                <a href="index.html#home" class="text-gray-700 hover:text-[#682857] font-medium">Início</a>
-                <a href="index.html#about" class="text-gray-700 hover:text-[#682857] font-medium">Sobre</a>
-                <a href="index.html#team" class="text-gray-700 hover:text-[#682857] font-medium">Equipe</a>
-                <a href="materiais.html" class="text-gray-700 hover:text-[#682857] font-medium">Materiais</a>
-                <!--<a href="index.html#publications" class="text-gray-700 hover:text-[#682857] font-medium">Publicações</a>-->
-                <a href="projetos.html" class="text-gray-700 hover:text-[#682857] font-medium">Projetos</a>
-                <a href="index.html#contact" class="text-gray-700 hover:text-[#682857] font-medium">Contato</a>
-            </div>
-        </div>
-    </nav>
-</div>
+        <nav class="site-nav" id="primary-nav" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="projetos.html">Projetos &amp; Eventos</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="carreira.html">Carreira</a>
+            <a href="contato.html">Contato</a>
+            <a class="nav-login" href="entrar.html"><span aria-hidden="true">♙</span> Entrar</a>
+        </nav>
+    </div>
+</header>
